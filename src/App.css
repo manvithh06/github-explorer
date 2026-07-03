@@ -1,0 +1,45 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #f9fafb; color: #111; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand { font-weight: 700; text-decoration: none; color: #111; }
+.nav-links { display: flex; gap: 16px; }
+.nav-links a { text-decoration: none; color: #555; font-size: 14px; }
+
+.container { max-width: 800px; margin: 32px auto; padding: 0 20px; }
+
+.search-page { text-align: center; padding: 60px 0; }
+.search-page h1 { font-size: 28px; margin-bottom: 8px; }
+.search-page p { color: #666; margin-bottom: 24px; }
+
+.search-row { display: flex; gap: 8px; max-width: 400px; margin: 0 auto; }
+.search-row input { flex: 1; padding: 10px 14px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
+.search-row button { padding: 10px 20px; background: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; }
+
+.profile { display: flex; gap: 20px; align-items: flex-start; background: white; padding: 20px; border-radius: 12px; border: 1px solid #e5e7eb; margin-bottom: 8px; }
+.profile img { width: 80px; height: 80px; border-radius: 50%; }
+.profile h2 { font-size: 20px; margin-bottom: 2px; }
+.muted { color: #888; font-size: 14px; margin-bottom: 6px; }
+.profile-meta { display: flex; gap: 16px; font-size: 13px; color: #555; margin-top: 8px; }
+
+.repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+
+.repo-card { background: white; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; }
+.repo-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.repo-header a { font-weight: 500; color: #2563eb; text-decoration: none; font-size: 14px; }
+.repo-desc { font-size: 13px; color: #555; margin-bottom: 10px; }
+.repo-meta { display: flex; gap: 12px; font-size: 12px; color: #888; }
+
+.star-btn { background: none; border: none; font-size: 20px; cursor: pointer; color: #ccc; }
+.star-btn.starred { color: #f59e0b; }
+
+.loading { text-align: center; padding: 40px; color: #888; }
+.error-msg { text-align: center; padding: 40px; color: #dc2626; }
