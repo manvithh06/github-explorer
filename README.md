@@ -1,8 +1,5 @@
 ## GitHub Profile Explorer
 
-### Setup
-1. npm install
-2. npm run dev
 
 ### Features
 - Search any GitHub username
